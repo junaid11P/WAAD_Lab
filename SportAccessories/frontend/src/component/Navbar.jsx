@@ -73,12 +73,12 @@ const Navbar = ({ onSearch }) => {
                   <li className="nav-item">
                     <Link 
                       className="nav-link" 
-                      to="/pages/Home" 
+                      to="/" 
                       title="Logout"
                       onClick={() => {
                         localStorage.removeItem('token');
                         setIsLoggedIn(false);
-                        navigate('/pages/Home');
+                        navigate('/');
                       }}
                     >
                       <i className="bi bi-box-arrow-right" style={{ fontSize: '1.5rem' }}></i><br />
