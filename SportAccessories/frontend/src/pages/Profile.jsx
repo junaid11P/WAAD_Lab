@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
@@ -20,12 +20,7 @@ const Profile = () => {
   });
   const navigate = useNavigate();
 
-  useEffect(() => {
-    fetchUserData();
-    fetchUserOrders();
-  }, );
-
-  const fetchUserData = async () => {
+  const fetchUserData = useCallback(async () => {
     try {
       const token = localStorage.getItem('token');
       if (!token) {
@@ -48,9 +43,9 @@ const Profile = () => {
       setError('Failed to fetch user data');
       setLoading(false);
     }
-  };
+  }, [navigate]);
 
-  const fetchUserOrders = async () => {
+  const fetchUserOrders = useCallback(async () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.get('http://localhost:5050/api/orders', {
@@ -60,7 +55,12 @@ const Profile = () => {
     } catch (err) {
       console.error('Failed to fetch orders:', err);
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    fetchUserData();
+    fetchUserOrders();
+  }, [fetchUserData, fetchUserOrders]);
 
   const handleInputChange = (e) => {
     setFormData({
