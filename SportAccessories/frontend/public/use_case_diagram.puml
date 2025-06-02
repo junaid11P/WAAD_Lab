@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+actor Customer
+actor Admin
+
+Customer --> (Register)
+Customer --> (Login/Logout)
+Customer --> (View Products)
+Customer --> (Add to Cart)
+Customer --> (View Cart)
+Customer --> (Checkout)
+Customer --> (View Order History)
+Customer --> (Edit Profile)
+Customer --> (View Return Policy)
+
+Admin --> (Login/Logout)
+Admin --> (Add/Edit/Delete Products)
+Admin --> (View/Manage Orders)
+Admin --> (View/Manage Users)
+@enduml
