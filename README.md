@@ -17,8 +17,8 @@ The class diagram for this project is shown below:
 Below are the sequence-wise screenshots of the frontend:
 
 1. ![F1](SportAccessories/frontend/public/OUTPUTScreenshots/frontend/F1.png)
-   - ![F1.1](SportAccessories/frontend/public/OUTPUTScreenshots/frontend/F1.1.png)
-   - ![F1.2](SportAccessories/frontend/public/OUTPUTScreenshots/frontend/F1.2.png)
+1.1 ![F1.1](SportAccessories/frontend/public/OUTPUTScreenshots/frontend/F1.1.png)
+1.2 ![F1.2](SportAccessories/frontend/public/OUTPUTScreenshots/frontend/F1.2.png)
 2. ![F2](SportAccessories/frontend/public/OUTPUTScreenshots/frontend/F2.png)
 3. ![F3](SportAccessories/frontend/public/OUTPUTScreenshots/frontend/F3.png)
 4. ![F4](SportAccessories/frontend/public/OUTPUTScreenshots/frontend/F4.png)
