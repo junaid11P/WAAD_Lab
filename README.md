@@ -10,5 +10,5 @@ The use case diagram for this project is shown below:
 
 The class diagram for this project is shown below:
 
-![Class Diagram](SportAccessories/frontend/public/class_diagram.PNG)
+![Class Diagram](SportAccessories/frontend/public/class_diagram.png)
 
